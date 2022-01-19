@@ -1,0 +1,16 @@
+button{
+    margin-left: 25px;
+}
+label{
+    font-size: 25px;
+}
+.topContainer {
+    background-image: url(../../assets/img/pizza\ 2.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(49, 35, 35, 0.5);
+ 
+  
+} 

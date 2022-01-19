@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+h3{
+    margin-left: 25px;
+    font-size: 20px;
+    margin-top: 25px;
+}
+.header{
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+body{
+    height:100%
+}
+.text{
+    color: white;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ p> {
+    font-size: large;
+}
+.topContainer {
+    background-image: url(../../assets/img/pizza\ 2.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(49, 35, 35, 0.5);
+ 
+  
+} 
+.header__desing{
+    margin-top: 20px;
+}
+.content{
+    margin-top: 150px;
+    margin-left: 350px;
+}
+
+
+button{
+    padding: 5px 10px !important;
+}

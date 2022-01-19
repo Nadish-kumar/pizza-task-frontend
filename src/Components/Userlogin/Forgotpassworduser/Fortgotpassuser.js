@@ -17,7 +17,7 @@ const Fortgotpassuser = () => {
 
         // alert(JSON.stringify(values, null, 2));
       try {
-        await axios.put("http://localhost:8001/register-user",values)
+        await axios.put("https://pizzatask-hackathon.herokuapp.com/register-user",values)
         navigate ('/userlogin')
       } catch (error) {
           console.log(error)

@@ -19,7 +19,7 @@ const Userreg = () => {
         onSubmit: async (values) => {
               //  alert(JSON.stringify(values, null, 2));
            try {
-            await axios.post('http://localhost:8001/register-user',values)
+            await axios.post('https://pizzatask-hackathon.herokuapp.com/register-user',values)
             nagivate('/')
            } catch (error) {
                console.log(error);

@@ -16,7 +16,7 @@ const Adminlog = () => {
         onSubmit: async (values) => {
             // alert(JSON.stringify(values, null, 2));
         try {
-          let logindata = await axios.post("http://localhost:8001/login-admin",values)
+          let logindata = await axios.post("https://pizzatask-hackathon.herokuapp.com/login-admin",values)
            window.localStorage.setItem('mytoken',logindata.data.token)
          
            navigate("/admin-dashboard")

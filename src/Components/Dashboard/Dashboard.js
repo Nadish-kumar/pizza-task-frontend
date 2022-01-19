@@ -25,7 +25,7 @@ const Dashboard = () => {
 
    useEffect( async() => {
            try {
-            let breadata = await axios.get("http://localhost:8001/bread");
+            let breadata = await axios.get("https://pizzatask-hackathon.herokuapp.com/bread");
             setbread(breadata.data) 
            } catch (error) {
                console.log(error)
@@ -35,7 +35,7 @@ const Dashboard = () => {
       const [sauce, setsauce] = useState([])
       useEffect( async() => {
         try {
-         let saucedata = await axios.get("http://localhost:8001/sauce");
+         let saucedata = await axios.get("https://pizzatask-hackathon.herokuapp.com/sauce");
          setsauce(saucedata.data) 
         } catch (error) {
             console.log(error)
@@ -45,7 +45,7 @@ const Dashboard = () => {
    const [cheese, setcheese] = useState([])
    useEffect( async() => {
     try {
-     let cheesedata = await axios.get("http://localhost:8001/cheese");
+     let cheesedata = await axios.get("https://pizzatask-hackathon.herokuapp.com/cheese");
      setcheese(cheesedata.data) 
     } catch (error) {
         console.log(error)
@@ -55,7 +55,7 @@ const Dashboard = () => {
  const [veg, setveg] = useState([])
  useEffect( async() => {
     try {
-     let vegdata = await axios.get("http://localhost:8001/veg");
+     let vegdata = await axios.get("https://pizzatask-hackathon.herokuapp.com/veg");
      setveg(vegdata.data) 
     } catch (error) {
         console.log(error)
@@ -65,7 +65,7 @@ const Dashboard = () => {
 const [meat, setmeat] = useState([])
 useEffect( async() => {
     try {
-     let meatdata = await axios.get("http://localhost:8001/meat");
+     let meatdata = await axios.get("https://pizzatask-hackathon.herokuapp.com/meat");
      setmeat(meatdata.data) 
     } catch (error) {
         console.log(error)

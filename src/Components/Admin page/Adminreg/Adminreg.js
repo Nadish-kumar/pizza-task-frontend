@@ -19,7 +19,7 @@ const Adminreg = () => {
         onSubmit: async (values) => {
               //  alert(JSON.stringify(values, null, 2));
            try {
-            await axios.post('http://localhost:8001/register-admin',values)
+            await axios.post('https://pizzatask-hackathon.herokuapp.com/register-admin',values)
             nagivate('/admin')
            } catch (error) {
                console.log(error);

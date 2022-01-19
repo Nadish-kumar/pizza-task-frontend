@@ -18,7 +18,7 @@ const Forgetpassadd = () => {
 
             // alert(JSON.stringify(values, null, 2));
           try {
-            await axios.put("http://localhost:8001/register-admin",values)
+            await axios.put("https://pizzatask-hackathon.herokuapp.com/register-admin",values)
             navigate ('/adminlogin')
           } catch (error) {
               console.log(error)

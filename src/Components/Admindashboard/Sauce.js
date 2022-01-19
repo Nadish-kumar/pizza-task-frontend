@@ -15,7 +15,7 @@ const Sauce = () => {
         onSubmit: async (values) => {
         //   alert(JSON.stringify(values, null, 2));
           try {
-            await axios.post('http://localhost:8001/sauce',values)
+            await axios.post('https://pizzatask-hackathon.herokuapp.com/sauce',values)
           alert('item is posts')
            } catch (error) {
                console.log(error);

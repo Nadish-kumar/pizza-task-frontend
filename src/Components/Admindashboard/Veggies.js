@@ -15,7 +15,7 @@ const Veggies = () => {
         },
         onSubmit: async (values) => {
             try {
-                await axios.post('http://localhost:8001/veg',values)
+                await axios.post('https://pizzatask-hackathon.herokuapp.com/veg',values)
               alert('item is posts')
                } catch (error) {
                    console.log(error);

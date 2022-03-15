@@ -5,7 +5,6 @@ import { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
 import Carditems from "./Carditems";
-import { Link } from "react-router-dom";
 import logo from "../../assets/img/pizza.jpg";
 
 const Dashboard = () => {
@@ -144,9 +143,9 @@ const Dashboard = () => {
     <div className="container-fluid ">
       <div className="row words">
         <div className="col-lg-8">
-          <div className="row ">
-            <h1>customize your Pizza</h1>
-            <h3>Choose your base</h3>
+          <div className="row words__pizza">
+            <h1>Customize your Pizza</h1>
+            <h2>Choose your base</h2>
             {bread.map((product) => {
               return (
                 <Dashboardcontent
@@ -235,7 +234,7 @@ const Dashboard = () => {
                     </strong>
                   </div>
                   <span>
-                    <strong>${total}</strong>
+                    <strong>INR{total}</strong>
                   </span>
                 </li>
               </ul>

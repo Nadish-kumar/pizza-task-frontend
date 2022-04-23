@@ -18,10 +18,10 @@ const Userlogin = () => {
         try {
           let logindata = await axios.post("https://pizzatask-hackathon.herokuapp.com/login-user",values)
            window.localStorage.setItem('mytoken',logindata.data.token)
-         
+           alert("login successfully")
            navigate("/dashboard")
         } catch (error) {
-          console.log(error);
+          alert("Incorrect email & password")
         }
         },
       });

@@ -21,12 +21,14 @@ const Home = () => {
   </header>
             </div>
             
-              <div className='row content'>
-                  <div className='col-lg-6'>
+              <div className='row '>
+                <div className='col-md-3'></div>
+                  <div className='col-lg-6 content'>
                   <h1>PIZZA HUT</h1>
                   <h2>Order your Pizza, Get it right Now </h2>
                   <button className='btn btn-warning'>Order Now</button>
                   </div>
+                  <div className='col-md-3'></div>
              
               </div>
           

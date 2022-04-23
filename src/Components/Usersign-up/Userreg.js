@@ -20,7 +20,8 @@ const Userreg = () => {
               //  alert(JSON.stringify(values, null, 2));
            try {
             await axios.post('https://pizzatask-hackathon.herokuapp.com/register-user',values)
-            nagivate('/')
+            alert("Registration is completed successfully")
+            nagivate('/dashboard')
            } catch (error) {
                console.log(error);
            }

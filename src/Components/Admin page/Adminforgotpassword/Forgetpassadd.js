@@ -19,6 +19,7 @@ const Forgetpassadd = () => {
             // alert(JSON.stringify(values, null, 2));
           try {
             await axios.put("https://pizzatask-hackathon.herokuapp.com/register-admin",values)
+            alert("Your password is changed successfully")
             navigate ('/adminlogin')
           } catch (error) {
               console.log(error)

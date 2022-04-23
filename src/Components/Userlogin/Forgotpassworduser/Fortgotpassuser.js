@@ -18,6 +18,7 @@ const Fortgotpassuser = () => {
         // alert(JSON.stringify(values, null, 2));
       try {
         await axios.put("https://pizzatask-hackathon.herokuapp.com/register-user",values)
+        alert("Your password is changed successfully")
         navigate ('/userlogin')
       } catch (error) {
           console.log(error)

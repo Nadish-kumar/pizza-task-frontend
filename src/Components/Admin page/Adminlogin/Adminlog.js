@@ -18,10 +18,10 @@ const Adminlog = () => {
         try {
           let logindata = await axios.post("https://pizzatask-hackathon.herokuapp.com/login-admin",values)
            window.localStorage.setItem('mytoken',logindata.data.token)
-         
+           alert("Login successfully")
            navigate("/admin-dashboard")
         } catch (error) {
-          console.log(error);
+          alert("Incorrect email & password")
         }
         },
       });

@@ -6,7 +6,7 @@ const Dashboardcontent = (props) => {
     return (
         <div className='col-lg-4 wordpizza mt-3'>
         <div class="card" >
-            <img src={props.productdata.url} class="card-img-top" alt="..."/>
+            <img src={props.productdata.url} className="url__rending" class="card-img-top" alt="..."/>
                 <div class="card-body">
                     <h5 class="card-title">{props.productdata.name}</h5>
                     <p class="card-text">{props.productdata.des}</p>

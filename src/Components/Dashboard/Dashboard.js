@@ -143,6 +143,7 @@ const Dashboard = () => {
     <div className="container-fluid ">
       <div className="row words">
         <div className="col-lg-8">
+        
           <div className="row words__pizza">
             <h1>Customize your Pizza</h1>
             <h2>Choose your base</h2>
@@ -155,10 +156,10 @@ const Dashboard = () => {
               );
             })}
           </div>
-        </div>
+        
         <hr></hr>
         {/* sauce display */}
-        <div className="col-lg-8 ">
+        
           <div className="row ">
             <h3>Choose your Sauce</h3>
             {sauce.map((product) => {
@@ -170,9 +171,9 @@ const Dashboard = () => {
               );
             })}
           </div>
-        </div>
+        
         <hr></hr>
-        <div className="col-lg-8 ">
+   
           <div className="row ">
             <h3>Choose your cheese</h3>
             {cheese.map((product) => {
@@ -184,9 +185,9 @@ const Dashboard = () => {
               );
             })}
           </div>
-        </div>
+
         <hr></hr>
-        <div className="col-lg-8 ">
+       
           <div className="row ">
             <h3>Choose your Veggies</h3>
             {veg.map((product) => {
@@ -198,9 +199,9 @@ const Dashboard = () => {
               );
             })}
           </div>
-        </div>
+     
         <hr></hr>
-        <div className="col-lg-8 ">
+
           <div className="row ">
             <h3>Choose your Meat</h3>
             {meat.map((product) => {
@@ -212,8 +213,8 @@ const Dashboard = () => {
               );
             })}
           </div>
+        
         </div>
-
         <div className="col-lg-4 cartitems">
           <div class="card mb-4">
             <div class="card-header py-3">

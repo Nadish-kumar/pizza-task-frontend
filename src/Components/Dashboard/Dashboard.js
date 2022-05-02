@@ -14,10 +14,12 @@ const Dashboard = () => {
   };
 
   let handleRemoveCart = (product) => {
-    let index = cartitems.findindex((obj) => obj.id == product.id);
-    let removedata = cartitems.splice(index, 1);
-    setcartitems([...removedata]);
+    settotal(total - product.price);
+
+    let removeItem = cartitems.filter(obj => obj._id !== product._id);
+    setcartitems([...removeItem])
   };
+
   const [bread, setbread] = useState([]);
   const [cartitems, setcartitems] = useState([]);
   const [total, settotal] = useState(0);
@@ -216,7 +218,46 @@ const Dashboard = () => {
         
         </div>
         <div className="col-lg-4 cartitems">
-          <div class="card mb-4">
+        {/* <div class=" mb-4">
+            <div class="card-header py-3">
+              <h5 class="mb-0">Summary</h5>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                  Products
+                  <span>$53.98</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                  Shipping
+                  <span>Gratis</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                  <div>
+                    <strong>Total amount</strong>
+                    <strong>
+                      <p class="mb-0">(including VAT)</p>
+                    </strong>
+                  </div>
+                  <span><strong>$53.98</strong></span>
+                </li>
+              </ul>
+
+              <button type="button" class="btn btn-primary btn-lg btn-block">
+                Go to checkout
+              </button>
+            </div>
+          </div> */}
+          {/* <div className="card">
+          <h3 className="cart__text">Cart</h3>
+          <Carditems cartitems={cartitems} handleRemoveCart={handleRemoveCart} />
+          <div className="cart__amountsession">
+            <div className="cart__refamount">Total Amount</div>
+            <div className="cart__inr">INR{total}</div>
+          </div>
+          <button className="btn btn-success btn-lg" onClick={payAmount}>Order Now</button>
+          </div> */}
+          <div class="mb-4">
             <div class="card-header py-3">
               <h5 class="mb-0">Cart</h5>
             </div>

@@ -1,9 +1,29 @@
-.wordpizza {
-    color: black;
-
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 500px;
+    background-color: lightgrey;
+    width: 400px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
-/* .url__rending {
-    width: auto;
-    height: 60%
-} */
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.cardcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.som {
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}

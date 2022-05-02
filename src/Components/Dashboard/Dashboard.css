@@ -43,3 +43,24 @@
   margin-top: 100px;
   position: sticky;
 }
+
+.cart__text {
+  text-align: center;
+}
+
+.cart__amountsession {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -200px;
+
+
+}
+
+.cart__inr {
+  margin-left: 250px;
+  font-size: 25px;
+}
+
+.cart__refamount {
+  font-size: 25px;
+}

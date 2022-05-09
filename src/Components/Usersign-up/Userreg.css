@@ -1,0 +1,28 @@
+.buttongro1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.inputfield1 {
+    margin-top: 20px;
+}
+
+.gmail1 {
+    width: 100%;
+    height: 100vh;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 100px !important;
+}
+
+.inputfield1 {
+    width: 100%;
+}
+
+.buttongro1 {
+    text-align: center;
+}
